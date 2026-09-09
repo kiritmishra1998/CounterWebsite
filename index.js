@@ -1,21 +1,18 @@
-const decreaseBtn = document.getElementById("decrementBtn");
-const increaseBtn = document.getElementById("incrementBtn");
-const resetBtn = document.getElementById("resetBtn");
-const countLabel = document.getElementById("countLabel");
+function rollDice()
+{
+    const numOfDice=document.getElementById("diceCount").value;
+    const diceResult=document.getElementById("diceResults");
+    const diceImages=document.getElementById("diceImages");
+    const values=[];
+    const images=[];
 
-let count = 0;
+    for(let i=0;i<numOfDice;i++)
+    {
+        const value=Math.floor(Math.random()*6)+1;
+        values.push(value);
+        images.push(`<img src="dice_images/dice-six-faces-${value}.png">`)
+    }
 
-increaseBtn.onclick=function(){
-    count++;
-    countLabel.textContent = count;
-}
-
-decreaseBtn.onclick=function(){
-    count--;
-    countLabel.textContent = count;
-}
-
-resetBtn.onclick=function(){
-    count = 0;
-    countLabel.textContent = count;
+    diceResult.textContent=`dice: ${values.join(',')}`;
+    diceImages.innerHTML=images.join('');
 }

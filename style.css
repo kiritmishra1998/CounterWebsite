@@ -1,29 +1,32 @@
-#countLabel
-{
-    display:block;
-    text-align:center;
-    font-size: 10em;
-    font-family: 'Courier New', Courier, monospace;
-background-color: black;
-    color: gold;
-    padding: 20px;
-    border-radius: 10px;
+#container{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
 }
-#btnContainer
-{
-    text-align:center;
+button{
+    font-size:1.5rem;
+    padding:10px 15px;
+    border-radius:10px;
+    border:none;
+    background-color: rgb(43, 226, 202);
+    color:red;
+    font-weight: bold;
+    cursor:pointer
 }
-.buttons
-{
-    font-size: 1.5em;
-    color:gold;
-    background-color: black;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.25s;
+button:hover{
+    background-color: bisque;
 }
-.buttons:hover
-{
-    background-color: rgb(255, 47, 0);
+button:active{
+    background-color: azure;
+}
+input{
+    font-size: 2rem;
+    width: 150px;
+    text-align: center;
+    font-weight: bold;
+}
+#diceImages img{
+    width:150px;
+    margin:5px;
 }
