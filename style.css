@@ -9,16 +9,16 @@ button{
     padding:10px 15px;
     border-radius:10px;
     border:none;
-    background-color: rgb(43, 226, 202);
-    color:red;
+    background-color: black;
+    color:goldenrod;
     font-weight: bold;
     cursor:pointer
 }
 button:hover{
-    background-color: bisque;
+    background-color: rgb(222, 222, 135);
 }
 button:active{
-    background-color: azure;
+    background-color: rgb(255, 0, 200);
 }
 input{
     font-size: 2rem;
